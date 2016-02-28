@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Lantern Web Proxy",
+  "description": "This extension allows you to control the Lantern web proxy",
+  "version": "0.1",
+
+  "permissions": [
+    "http://127.0.0.1:16823/*",
+    "proxy",
+    "notifications"
+  ],
+
+  "browser_action": {
+    "default_icon": "32off.png",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "scripts": ["common.js", "background.js"]
+  },
+
+  "web_accessible_resources": [
+    "32on.png"
+  ]
+}
